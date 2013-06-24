@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
     android:persistent="false">
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="subScreen"
-        android:title="@string/subscreen"
-        android:persistent="false" >
-        <CheckBoxPreference 
-            android:key="CheckBox"
-            android:title="@string/checkbox"
+        android:title="@string/subScreen"
+        android:persistent="false">
+        <CheckBoxPreference
             android:defaultValue="true"
-            android:summary="check or uncheck"
-            />
+            android:disableDependentsState="true"
+            android:key="CheckBox"
+            android:title="@string/checkbox" />
         <EditTextPreference
-            android:key="EditText"
-            android:title="@string/edittext"
             android:defaultValue="enter text"
+            android:key="EditText"
             android:summary="@string/enter_text"
-            />
+            android:title="@string/edittext" />
     </PreferenceScreen>
     <!-- <ListPreference
         android:key="List"

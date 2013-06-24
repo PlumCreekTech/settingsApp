@@ -16,12 +16,12 @@ import android.preference.PreferenceFragment;
 public class SettingsFragment extends PreferenceFragment implements
 		OnSharedPreferenceChangeListener {
 
-	public static final String KEY = "CheckBox";
+	//public static final String KEY = "CheckBox";
 	
 	public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 		
-		addPreferencesFromResource(R.xml.preferences);
+		addPreferencesFromResource(R.layout.preferences);
 	}
 	
 	public void onPause() {
@@ -40,10 +40,10 @@ public class SettingsFragment extends PreferenceFragment implements
 	 */
 	@Override
 	public void onSharedPreferenceChanged(SharedPreferences shared, String key) {
-		if(key.equals(KEY)) {
+	/*	if(key.equals(KEY)) {
 			Preference prefer = findPreference(key);
 			prefer.setSummary(shared.getString(key, ""));
-		}
+		}*/
 	}
 
 }
