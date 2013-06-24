@@ -18,23 +18,23 @@
             android:summary="@string/enter_text"
             />
     </PreferenceScreen>
-    <ListPreference
+    <!-- <ListPreference
         android:key="List"
         android:title="List"
         android:dialogTitle="@string/list_preferences"
         android:entries="@array/entries"
         android:entryValues="@array/entries"
-        />
+        /> -->
     <PreferenceCategory 
         android:key="category"
         android:title="@string/category">
-        <MultiSelectListPreference 
+      <!--   <MultiSelectListPreference 
             android:key="multiList"
         	android:title="multiList"
         	android:dialogTitle="@string/multilist_preferences"
         	android:entries="@array/multientries"
         	android:entryValues="@array/multientries"
-            />
+            /> -->
         <SwitchPreference 
             android:key="swatch"
             android:title="@string/swatch"
@@ -44,7 +44,7 @@
         </SwitchPreference>
     </PreferenceCategory>
     
-    <string-array name="entries">
+   <!--  <string-array name="entries">
     <item>"Top"</item>
     <item>"Center"</item>
     <item>"Bottom"</item>
@@ -54,6 +54,6 @@
     <item>"Top"</item>
     <item>"Center"</item>
     <item>"Bottom"</item>
-	</string-array>
+	</string-array> -->
 
 </PreferenceScreen>

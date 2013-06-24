@@ -11,7 +11,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
     }
 
 
@@ -22,9 +21,9 @@ public class MainActivity extends Activity {
         return true;
     }
 	
-	public void settingsInit(View view) {
+	public void onClick(View view) {
 		if( view.equals(findViewById(R.id.button) ) ) {
-			Intent intend = new Intent(this, SettingsActivity.class);
+			Intent intend = new Intent(MainActivity.this, SettingsActivity.class);
 			startActivity(intend);
 		}
 	}
