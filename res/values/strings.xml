@@ -4,5 +4,26 @@
     <string name="app_name">SettingsApp</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="subscreen">subScreen</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="edittext">EditText</string>
+    <string name="enter_text">enter text</string>
+    <string name="list_preferences">list_preferences</string>
+    
+    <string-array name="entries">
+    <item>"Top"</item>
+    <item>"Center"</item>
+    <item>"Bottom"</item>
+	</string-array>
+
+	<string-array name="multientries">
+    <item>"Top"</item>
+    <item>"Center"</item>
+    <item>"Bottom"</item>
+	</string-array>
+    <string name="category">category</string>
+    <string name="multilist_preferences">multilist preferences</string>
+    <string name="swatch">swatch</string>
+    <string name="settings">settings</string>
 
 </resources>

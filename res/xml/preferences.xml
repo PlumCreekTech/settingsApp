@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:persistent="false">
+    <PreferenceScreen 
+        android:key="subScreen"
+        android:title="@string/subscreen"
+        android:persistent="false" >
+        <CheckBoxPreference 
+            android:key="CheckBox"
+            android:title="@string/checkbox"
+            android:defaultValue="true"
+            android:summary="check or uncheck"
+            />
+        <EditTextPreference
+            android:key="EditText"
+            android:title="@string/edittext"
+            android:defaultValue="enter text"
+            android:summary="@string/enter_text"
+            />
+    </PreferenceScreen>
+    <ListPreference
+        android:key="List"
+        android:title="List"
+        android:dialogTitle="@string/list_preferences"
+        android:entries="@array/entries"
+        android:entryValues="@array/entries"
+        />
+    <PreferenceCategory 
+        android:key="category"
+        android:title="@string/category">
+        <MultiSelectListPreference 
+            android:key="multiList"
+        	android:title="multiList"
+        	android:dialogTitle="@string/multilist_preferences"
+        	android:entries="@array/multientries"
+        	android:entryValues="@array/multientries"
+            />
+        <SwitchPreference 
+            android:key="swatch"
+            android:title="@string/swatch"
+            android:defaultValue="true">
+            <intent
+                />
+        </SwitchPreference>
+    </PreferenceCategory>
+    
+    <string-array name="entries">
+    <item>"Top"</item>
+    <item>"Center"</item>
+    <item>"Bottom"</item>
+	</string-array>
+
+	<string-array name="multientries">
+    <item>"Top"</item>
+    <item>"Center"</item>
+    <item>"Bottom"</item>
+	</string-array>
+
+</PreferenceScreen>
