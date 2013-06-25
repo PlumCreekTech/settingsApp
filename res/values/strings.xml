@@ -5,25 +5,19 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="subscreen">subScreen</string>
-    <string name="checkbox">CheckBox</string>
-    <string name="edittext">EditText</string>
+    <string name="checkbox">check box</string>
+    <string name="checkboxes">check boxes</string>
+    <string name="edittext">edit text</string>
     <string name="enter_text">enter text</string>
+    <string name="first">first</string>
+    <string name="lists">lists</string>
     <string name="list_preferences">list_preferences</string>
-    
-    <string-array name="entries">
-    <item>"Top"</item>
-    <item>"Center"</item>
-    <item>"Bottom"</item>
-	</string-array>
-
-	<string-array name="multientries">
-    <item>"Top"</item>
-    <item>"Center"</item>
-    <item>"Bottom"</item>
-	</string-array>
-    <string name="category">category</string>
-    <string name="multilist_preferences">multilist preferences</string>
-    <string name="swatch">swatch</string>
+    <string name="multiselect">multiple select</string>
+    <string name="second">second</string>
     <string name="settings">settings</string>
+    <string name="singleselect">single select</string>
+    <string name="sw">switch</string>
+    <string name="switches">switches</string>
+    <string name="third">third</string>
 
 </resources>

@@ -1,41 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:persistent="false" >
-    <PreferenceCategory
-        android:key="category"
-        android:title="@+string/check_boxes" >
+    android:persistent="false"
+    android:orderingFromXml="false" >
+    <PreferenceScreen
+        android:key="screen1"
+        android:title="@+string/checkboxes" >
         <CheckBoxPreference
+            android:key="checkBox1"
+            android:title="@+string/checkbox"
             android:defaultValue="false"
             android:disableDependentsState="false"
-            android:key="checkBox1"
-            android:title="@+string/check_box"
             android:summaryOff="off"
             android:summaryOn="on" />
         <CheckBoxPreference
-            android:defaultValue="true"
             android:key="checkBox2"
-            android:title="@+string/check_box"
+            android:title="@string/checkbox"
+            android:defaultValue="true"
+            android:disableDependentsState="true"
             android:summaryOff="off"
             android:summaryOn="on"
             android:dependency="checkBox1"
             android:shouldDisableView="true" />
-    </PreferenceCategory>
-    <EditTextPreference
-            android:key="editText"
-            android:persistent="false"
-            android:defaultValue="enter text"
-            android:summary="enter text"
-            android:title="@+string/edit_text"
-            android:negativeButtonText="negative"
-            android:positiveButtonText="positive" />
-    <PreferenceCategory 
-        android:key="category"
-        android:title="@string/category">
-        <SwitchPreference 
-            android:key="swatch"
-            android:title="@+string/swatch"
-            android:defaultValue="true">
-        </SwitchPreference>
-    </PreferenceCategory>
+        <CheckBoxPreference
+            android:key="checkBox3"
+            android:title="@string/checkbox"
+            android:defaultValue="true"
+            android:summaryOff="off"
+            android:summaryOn="on"
+            android:dependency="checkBox2"
+            android:shouldDisableView="true" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="screen2"
+        android:title="@+string/switches" >
+        <SwitchPreference
+            android:key="switch1"
+            android:title="@+string/sw"
+            android:defaultValue="false"
+            android:disableDependentsState="false"
+            android:switchTextOff="-"
+            android:switchTextOn="+"
+            android:summaryOff="off"
+            android:summaryOn="on" />
+        <SwitchPreference
+            android:key="switch2"
+            android:title="@string/sw"
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:switchTextOff="-"
+            android:switchTextOn="+"
+            android:summaryOff="off"
+            android:summaryOn="on"
+            android:dependency="switch1"
+            android:shouldDisableView="true" />
+        <SwitchPreference
+            android:key="switch3"
+            android:title="@string/sw"
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:switchTextOff="-"
+            android:switchTextOn="+"
+            android:summaryOff="off"
+            android:summaryOn="on"
+            android:dependency="switch2"
+            android:shouldDisableView="true" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="screen3"
+        android:title="@+string/edittext" >
+        <EditTextPreference
+            android:key="edittext1"
+            android:title="@+string/first"
+            android:dialogTitle="@string/first"
+            android:dialogMessage="kharmatic"
+            android:negativeButtonText="no"
+            android:positiveButtonText="go"
+            android:summary="enter text here" />
+        <EditTextPreference
+            android:key="edittext2"
+            android:title="@+string/second"
+            android:dialogTitle="@string/second"
+            android:dialogMessage="discipline"
+            android:negativeButtonText="no"
+            android:positiveButtonText="go"
+            android:summary="enter text here" />
+        <EditTextPreference
+            android:key="edittext3"
+            android:title="@+string/third"
+            android:dialogTitle="@string/third"
+            android:dialogMessage="proliferates"
+            android:negativeButtonText="no"
+            android:positiveButtonText="go"
+            android:summary="enter text here" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="screen4"
+        android:title="@+string/lists" >
+        <ListPreference
+            android:key="listpref"
+            android:title="@+string/singleselect"
+            android:summary="select one choice from list"
+            android:entries="@+array/stringlabels"
+            android:entryValues="@+array/stringvalues"/>
+        <MultiSelectListPreference
+            android:key="multilistpref"
+            android:title="@string/multiselect"
+            android:summary="select multiple choices from list"
+            android:entries="@array/stringlabels"
+            android:entryValues="@array/stringvalues"/>
+    </PreferenceScreen>
 </PreferenceScreen>
