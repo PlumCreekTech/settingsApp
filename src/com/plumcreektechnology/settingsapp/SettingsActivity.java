@@ -3,10 +3,7 @@
  */
 package com.plumcreektechnology.settingsapp;
 
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceActivity;
 
 /**
