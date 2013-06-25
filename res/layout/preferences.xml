@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
-    android:persistent="false">
+    android:persistent="false"> >
     <PreferenceScreen
         android:key="subScreen"
-        android:title="@string/subScreen"
+        android:title="subScreen"
         android:persistent="false">
         <CheckBoxPreference
-            android:defaultValue="true"
-            android:disableDependentsState="true"
+            android:id="@+id/checkboxone"
             android:key="CheckBox"
+            android:defaultValue="true"
+            android:disableDependentsState="true" 
             android:title="@string/checkbox" />
         <EditTextPreference
+            android:id="@+id/textEdit"
             android:defaultValue="enter text"
             android:key="EditText"
             android:summary="@string/enter_text"
-            android:title="@string/edittext" />
+            android:title="@string/edittext"
+            android:dependency="CheckBox" />
     </PreferenceScreen>
     <!-- <ListPreference
         android:key="List"
@@ -42,16 +45,6 @@
         </SwitchPreference>
     </PreferenceCategory>
     
-   <!--  <string-array name="entries">
-    <item>"Top"</item>
-    <item>"Center"</item>
-    <item>"Bottom"</item>
-	</string-array>
-
-	<string-array name="multientries">
-    <item>"Top"</item>
-    <item>"Center"</item>
-    <item>"Bottom"</item>
-	</string-array> -->
+   
 
 </PreferenceScreen>

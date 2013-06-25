@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- <string-array name="entries"> -->
+  <!--   <item>"Top"</item>
+    <item>"Center"</item>
+    <item>"Bottom"</item>
+	</string-array>
+
+	<string-array name="multientries">
+    <item>"Top"</item>
+    <item>"Center"</item>
+    <item>"Bottom"</item>
+	</string-array>  -->
+</resources>
